@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        {{ post.title }}
+        <img src='{{ post.image.url }}' height='400' width=auto>
+    {% endfor %}
+{% endblock %}
